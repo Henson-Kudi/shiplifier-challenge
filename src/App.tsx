@@ -33,7 +33,7 @@ function App() {
       <div className="grid sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 w-full">
         {
           [...Array(9)].map((_, ind) => (
-            <div key={ind} className={`aspect-square border border-gray-200 rounded-md shadow-sm ${clickedBoxes.includes(ind) && 'bg-black'}`} onClick={()=>{
+            <div key={ind} className={`aspect-square border border-gray-200 rounded-md shadow-sm ${clickedBoxes.includes(ind) ? 'bg-black' : 'bg-white'}`} onClick={()=>{
               handleBoxClick(ind)
             }}>
 
